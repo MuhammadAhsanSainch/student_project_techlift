@@ -1,4 +1,4 @@
-import 'package:combined_app/model/components/components.dart';
+import 'package:combined_app/view/signin.dart';
 import 'package:flutter/material.dart';
 
 class DashBoard extends StatefulWidget {
@@ -9,51 +9,40 @@ class DashBoard extends StatefulWidget {
 }
 
 class _DashBoardState extends State<DashBoard> {
+  final Map<String, String> dashboardItems = {
+    'Students': 'images/students.jpg',
+    'Teachers': 'images/teacher.jpg',
+    'Courses': 'images/courses.png',
+    'Application Form': 'images/application.jpg',
+  };
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       // appBar: AppBar(),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ResuableRow(
-                imgUrl:
-                    "https://img.freepik.com/free-photo/portrait-young-female-student-with-yellow-notebook-standing-gray-high-quality-photo_144627-73688.jpg",
-                title: "Teachers"),
-            ResuableRow(
-                imgUrl:
-                    "https://img.freepik.com/free-photo/portrait-young-female-student-with-yellow-notebook-standing-gray-high-quality-photo_144627-73688.jpg",
-                title: "Students"),
-            ResuableRow(
-                imgUrl:
-                    "https://img.freepik.com/free-photo/portrait-young-female-student-with-yellow-notebook-standing-gray-high-quality-photo_144627-73688.jpg",
-                title: "Administration"),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class ResuableRow extends StatelessWidget {
-  final String? title;
-  final String? imgUrl;
-  const ResuableRow({super.key, required this.title, required this.imgUrl});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        GestureDetector(
-            onTap: () {
-              Navigator.pushReplacementNamed(context, '/students');
-            },
-            child: MyCard(imgUrl: imgUrl, title: title)),
-        MyCard(imgUrl: imgUrl, title: title)
-      ],
+          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 60),
+          child: GridView.builder(
+              itemCount: dashboardItems.length,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2),
+              itemBuilder: (BuildContext context, int index) {
+                return Card(
+                    child: Column(
+                  children: [
+                    Image.asset(
+                        dashboardItems[dashboardItems.keys.toList()[index]]!,
+                        fit: BoxFit.cover),
+                    SizedBox(
+                      height: context.height * .02,
+                    ),
+                    Text(dashboardItems.keys.toList()[index]),
+                    GestureDetector(onTap: () {
+                      Navigator.pushNamed(context, '/students');
+                    })
+                  ],
+                ));
+              })),
     );
   }
 }

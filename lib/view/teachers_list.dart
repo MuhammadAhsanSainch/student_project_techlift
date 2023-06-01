@@ -4,8 +4,8 @@ import 'package:combined_app/view_model/student_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class StudentsListScreen extends StatelessWidget {
-  const StudentsListScreen({super.key});
+class TeachersListScreen extends StatelessWidget {
+  const TeachersListScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class StudentsListScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Students Directory'),
+        title: const Text('Teachers Directory'),
       ),
       body: ListView.builder(
         itemCount: studentViewModel.students.length,
