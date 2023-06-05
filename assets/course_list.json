@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "name": "Data Structure",
+        "credit_hours": 3,
+        "instructor_name": "Zohaib",
+        "instructor_id": 0,
+        "thumbnailURL": "www.google.com/images/1.jpg"
+    },
+    {
+        "id": 0,
+        "name": "Algorithm",
+        "credit_hours": 3,
+        "instructor_name": "Ahsan",
+        "instructor_id": 0,
+        "thumbnailURL": "www.google.com/images/1.jpg"
+    },
+    {
+        "id": 0,
+        "name": "Visual Programming",
+        "credit_hours": 3,
+        "instructor_name": "Zaki",
+        "instructor_id": 0,
+        "thumbnailURL": "www.google.com/images/1.jpg"
+    }
+]

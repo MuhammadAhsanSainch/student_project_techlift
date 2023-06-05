@@ -1,7 +1,7 @@
 import 'package:combined_app/services/api_service.dart';
 import 'package:flutter/foundation.dart';
 
-class StudentViewModel with ChangeNotifier {
+class StudentViewModel extends ChangeNotifier {
   final ApiService apiService;
 
   List<Student> _students = [];

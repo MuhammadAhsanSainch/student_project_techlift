@@ -1,45 +1,54 @@
 // import 'package:combined_app/model/models/student.dart';
+import 'dart:convert';
+
 import 'package:combined_app/services/api_service.dart';
 import 'package:combined_app/view_model/student_view_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 class TeachersListScreen extends StatelessWidget {
   const TeachersListScreen({super.key});
+  Future<List<dynamic>> fetchDataFromJson() async {
+    String jsonData = await rootBundle.loadString('assets/student_list.json');
+    List<dynamic> data = json.decode(jsonData);
+    return data;
+  }
 
   @override
   Widget build(BuildContext context) {
-    final studentViewModel = Provider.of<StudentViewModel>(context);
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Teachers Directory'),
       ),
-      body: ListView.builder(
-        itemCount: studentViewModel.students.length,
-        itemBuilder: (context, index) {
-          final student = studentViewModel.students[index];
-          return ListTile(
-            title: Text(student.name),
-            subtitle: Text(student.email),
-            trailing: IconButton(
-              icon: const Icon(Icons.delete),
-              onPressed: () {
-                studentViewModel.deleteStudent(student.id);
-              },
-            ),
-          );
-        },
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.add),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => AddStudentScreen()),
-          );
-        },
-      ),
+      body: FutureBuilder<List<dynamic>>(
+          future: fetchDataFromJson(),
+          builder:
+              (BuildContext context, AsyncSnapshot<List<dynamic>> snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const CircularProgressIndicator();
+            } else if (snapshot.hasError) {
+              return Text('Error ${snapshot.error}');
+            } else {
+              List<dynamic> data = snapshot.data!;
+              return ListView.builder(
+                  itemCount: data.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    final item = data[index];
+                    return ListTile(
+                      leading: Image.network(item['imageURL']),
+                      title: Text(item['name']),
+                      subtitle: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Email: ${item['email']}'),
+                          Text('Phone: ${item['phone']}'),
+                        ],
+                      ),
+                    );
+                  });
+            }
+          }),
     );
   }
 }

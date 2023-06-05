@@ -13,7 +13,7 @@ class _DashBoardState extends State<DashBoard> {
     'Students': 'images/students.jpg',
     'Teachers': 'images/teacher.jpg',
     'Courses': 'images/courses.png',
-    'Application Form': 'images/application.jpg',
+    'Application': 'images/application.jpg',
   };
 
   @override
@@ -27,21 +27,24 @@ class _DashBoardState extends State<DashBoard> {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2),
               itemBuilder: (BuildContext context, int index) {
-                return Card(
-                    child: Column(
-                  children: [
-                    Image.asset(
-                        dashboardItems[dashboardItems.keys.toList()[index]]!,
-                        fit: BoxFit.cover),
-                    SizedBox(
-                      height: context.height * .02,
-                    ),
-                    Text(dashboardItems.keys.toList()[index]),
-                    GestureDetector(onTap: () {
-                      Navigator.pushNamed(context, '/students');
-                    })
-                  ],
-                ));
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context,
+                        '/${dashboardItems.keys.toList()[index].toLowerCase()}');
+                  },
+                  child: Card(
+                      child: Column(
+                    children: [
+                      Image.asset(
+                          dashboardItems[dashboardItems.keys.toList()[index]]!,
+                          fit: BoxFit.cover),
+                      SizedBox(
+                        height: context.height * .02,
+                      ),
+                      Text(dashboardItems.keys.toList()[index]),
+                    ],
+                  )),
+                );
               })),
     );
   }

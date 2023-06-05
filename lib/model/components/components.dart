@@ -117,9 +117,8 @@ class MyCard extends StatelessWidget {
       child: Center(
         child: Card(
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image.network(
+              Image.asset(
                 '$imgUrl',
                 width: 100,
                 height: 100,

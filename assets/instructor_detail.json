@@ -1,0 +1,26 @@
+{
+    "id":0,
+    "name":"ahsan",
+    "email":"ahsan@gmail.com",
+    "phone":"03422242503",
+    "imageURL":"www.google.com/images/1.jpg",
+    "courses":[
+        {
+            "id":0,
+            "name":"Data Structure",
+            "credit_hours":3,
+            "instructor_name":"ahsan",
+            "instructor_id":0,
+            "thumbnailURL":"www.google.com/images/1.jpg"
+        },
+        {
+            "id":0,
+            "name":"Data Structure",
+            "credit_hours":3,
+            "instructor_name":"ahsan",
+            "instructor_id":0,
+            "thumbnailURL":"www.google.com/images/1.jpg"
+
+        }
+    ]
+}

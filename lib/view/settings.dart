@@ -11,19 +11,40 @@ class Settings extends StatefulWidget {
 class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        ElevatedButton.icon(
-            onPressed: () {
-              Navigator.pushReplacementNamed(context, '/signin');
+    return Scaffold(
+      // appBar: AppBar(),
+      body: ListView(
+        children: [
+          ListTile(
+            leading: const Icon(
+              Icons.language,
+              color: AppColors.buttonColor,
+            ),
+            title: const Text('Change Language'),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: const Icon(
+              Icons.person,
+              color: AppColors.buttonColor,
+            ),
+            title: const Text('Update Profile'),
+            onTap: () {
+              Navigator.pushNamed(context, '/userprofile');
             },
-            icon: const Icon(
+          ),
+          ListTile(
+            leading: const Icon(
               Icons.logout,
               color: AppColors.buttonColor,
-              size: 24,
             ),
-            label: const Text('Logout'))
-      ],
+            title: const Text('Logout'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/signin');
+            },
+          ),
+        ],
+      ),
     );
   }
 }
