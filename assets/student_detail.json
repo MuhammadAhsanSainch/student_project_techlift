@@ -1,28 +1,158 @@
-{
-    "id":0,
-    "name":"naqi",
-    "email":"naqi@gmail.com",
-    "phone":"03422152503",
-    "batch_year":"2023",
-    "imageURL":"www.google.com/images/1.jpg",
-    "courses":[
-        {
-            "id":0,
-            "name":"Data Structure",
-            "credit_hours":3,
-            "instructor_name":"Ahsan",
-            "instructor_id":0,
-            "thumbnailURL":"www.google.com/images/1.jpg"
-
-        },
-        {
-            "id":0,
-            "name":"Data Structure",
-            "credit_hours":3,
-            "instructor_name":"Ahsan",
-            "instructor_id":0,
-            "thumbnailURL":"www.google.com/images/1.jpg"
-
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "name": "Muhammad Ahsan",
+        "email": "ahsnsainch@gmail.com",
+        "phone": "03023880430",
+        "batch_year": "2018",
+        "imageURL": "assets/images/ahsan.jpeg",
+        "courses": [
+            {
+                "id": 1,
+                "name": "Data Structure",
+                "credit_hours": 3,
+                "instructor_name": "Sir Naqi",
+                "instructor_id": 1,
+                "thumbnailURL": "images/data_structures.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Flutter",
+                "credit_hours": 3,
+                "instructor_name": "Sir Hardas",
+                "instructor_id": 2,
+                "thumbnailURL": "images/flutter.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Zohaib",
+        "email": "zohaib@gmail.com",
+        "phone": "0336-1027138",
+        "batch_year": "2016",
+        "imageURL": "assets/images/zohaib.jpeg",
+        "courses": [
+            {
+                "id": 1,
+                "name": "Data Structure",
+                "credit_hours": 3,
+                "instructor_name": "Sir Naqi",
+                "instructor_id": 1,
+                "thumbnailURL": "images/data_structures.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Flutter",
+                "credit_hours": 3,
+                "instructor_name": "Sir Hardas",
+                "instructor_id": 8,
+                "thumbnailURL": "images/flutter.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Waqas",
+        "email": "waqas@gmail.com",
+        "phone": "0311-3880654",
+        "batch_year": "2021",
+        "imageURL": "assets/images/waqas.jpeg",
+        "courses": [
+            {
+                "id": 1,
+                "name": "Data Structure",
+                "credit_hours": 3,
+                "instructor_name": "Sir Naqi",
+                "instructor_id": 1,
+                "thumbnailURL": "images/data_structures.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Flutter",
+                "credit_hours": 3,
+                "instructor_name": "Sir Hardas",
+                "instructor_id": 2,
+                "thumbnailURL": "images/flutter.jpg"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Purshortam",
+        "email": "haress@gmail.com",
+        "phone": "0302-4080430",
+        "batch_year": "2020",
+        "imageURL": "assets/images/purshortam.jpeg",
+        "courses": [
+            {
+                "id": 1,
+                "name": "Data Structure",
+                "credit_hours": 3,
+                "instructor_name": "Sir Naqi",
+                "instructor_id": 1,
+                "thumbnailURL": "images/data_structures.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Flutter",
+                "credit_hours": 3,
+                "instructor_name": "Sir Hardas",
+                "instructor_id": 2,
+                "thumbnailURL": "images/flutter.jpg"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Ruqaiya",
+        "email": "ruqaiya@gmail.com",
+        "phone": "0336-2227138",
+        "batch_year": "2019",
+        "imageURL": "assets/images/Ruqaiya.avif",
+        "courses": [
+            {
+                "id": 1,
+                "name": "Data Structure",
+                "credit_hours": 3,
+                "instructor_name": "Sir Naqi",
+                "instructor_id": 1,
+                "thumbnailURL": "images/data_structures.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Flutter",
+                "credit_hours": 3,
+                "instructor_name": "Sir Hardas",
+                "instructor_id": 8,
+                "thumbnailURL": "images/flutter.jpg"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Laiba",
+        "email": "Laiba@gmail.com",
+        "phone": "0311-1180654",
+        "batch_year": "2022",
+        "imageURL": "assets/images/Laiba.jpg",
+        "courses": [
+            {
+                "id": 1,
+                "name": "Data Structure",
+                "credit_hours": 3,
+                "instructor_name": "Sir Naqi",
+                "instructor_id": 1,
+                "thumbnailURL": "images/data_structures.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Flutter",
+                "credit_hours": 3,
+                "instructor_name": "Sir Hardas",
+                "instructor_id": 2,
+                "thumbnailURL": "images/flutter.jpg"
+            }
+        ]
+    }
+]

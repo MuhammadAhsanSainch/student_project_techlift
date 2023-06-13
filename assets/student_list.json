@@ -1,26 +1,74 @@
 [
     {
-        "id": 0,
-        "name": "naqi",
-        "email": "naqi@gmail.com",
-        "phone": "03422152503",
-        "batch_year": "2023",
-        "imageURL": "https://images.pexels.com/photos/5211478/pexels-photo-5211478.jpeg"
-    },
-    {
         "id": 1,
-        "name": "ali",
-        "email": "ali@gmail.com",
-        "phone": "034321915253",
-        "batch_year": "2023",
-        "imageURL": "https://images.pexels.com/photos/5553108/pexels-photo-5553108.jpeg"
+        "name": "Muhammad Ahsan",
+        "email": "ahsan@gmail.com",
+        "phone": "03023880430",
+        "batch_year": "2018",
+        "imageURL": "assets/images/students.jpg"
     },
     {
         "id": 2,
-        "name": "shan",
+        "name": "Ali Raza",
+        "email": "ali@gmail.com",
+        "phone": "034321915253",
+        "batch_year": "2023",
+        "imageURL": "assets/images/students.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Shan",
         "email": "shan@gmail.com",
         "phone": "03231152503",
         "batch_year": "2023",
-        "imageURL": "https://images.pexels.com/photos/7692506/pexels-photo-7692506.jpeg"
+        "imageURL": "assets/images/students.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Sajjad",
+        "email": "sajjad@gmail.com",
+        "phone": "03023880430",
+        "batch_year": "2018",
+        "imageURL": "assets/images/students.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Kamran",
+        "email": "ali@gmail.com",
+        "phone": "034321915253",
+        "batch_year": "2023",
+        "imageURL": "assets/images/students.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Babar",
+        "email": "shan@gmail.com",
+        "phone": "03231152503",
+        "batch_year": "2023",
+        "imageURL": "assets/images/students.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Wasim",
+        "email": "ahsan@gmail.com",
+        "phone": "03023880430",
+        "batch_year": "2018",
+        "imageURL": "assets/images/students.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Hasnain",
+        "email": "ali@gmail.com",
+        "phone": "034321915253",
+        "batch_year": "2023",
+        "imageURL": "assets/images/students.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Zahid",
+        "email": "shan@gmail.com",
+        "phone": "03231152503",
+        "batch_year": "2023",
+        "imageURL": "assets/images/students.jpg"
     }
 ]

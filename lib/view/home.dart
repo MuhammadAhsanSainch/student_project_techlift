@@ -1,5 +1,6 @@
 import 'package:combined_app/model/components/app_colors.dart';
 import 'package:combined_app/view/settings.dart';
+import 'package:combined_app/view/transcript.dart';
 import 'package:flutter/material.dart';
 
 import 'dashboard.dart';
@@ -12,11 +13,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int _selectedIndex = 1;
-  static const List<Widget> _widgetOptions = <Widget>[
-    DashBoard(),
-    Text('Hi there we are at techlift'),
-    Settings(),
+  int _selectedIndex = 0;
+  static final List<Widget> _widgetOptions = <Widget>[
+    const DashBoard(),
+    Transcript(),
+    const Settings(),
   ];
 
   void _onTapped(int a) {
@@ -49,7 +50,7 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.alarm), label: 'Alaram'),
+          BottomNavigationBarItem(icon: Icon(Icons.image), label: 'Transcript'),
           BottomNavigationBarItem(
               icon: Icon(Icons.settings), label: 'Settings'),
         ],

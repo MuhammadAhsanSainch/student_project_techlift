@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
           '/teachers': (context) => const TeachersListScreen(),
           '/courses': (context) => const CoursesListScreen(),
           '/application': (context) => const LeaveApplicationScreen(),
-          '/userprofile': (context) => const UserProfileScreen()
+          '/userprofile': (context) => const UserProfileScreen(),
         },
         initialRoute: '/home',
         home: const Home(),

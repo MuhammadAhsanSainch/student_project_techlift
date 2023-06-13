@@ -1,26 +1,30 @@
-{
-    "id":0,
-    "name":"ahsan",
-    "email":"ahsan@gmail.com",
-    "phone":"03422242503",
-    "imageURL":"www.google.com/images/1.jpg",
-    "courses":[
-        {
-            "id":0,
-            "name":"Data Structure",
-            "credit_hours":3,
-            "instructor_name":"ahsan",
-            "instructor_id":0,
-            "thumbnailURL":"www.google.com/images/1.jpg"
-        },
-        {
-            "id":0,
-            "name":"Data Structure",
-            "credit_hours":3,
-            "instructor_name":"ahsan",
-            "instructor_id":0,
-            "thumbnailURL":"www.google.com/images/1.jpg"
-
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "name": "Sir Naqi",
+        "email": "naqi@gmail.com",
+        "phone": "03422242503",
+        "imageURL": "assets/images/naqi.png",
+        "courses": [
+            {
+                "id": 1,
+                "name": "Data Structure",
+                "credit_hours": 3
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Muhammad Ahsan",
+        "email": "ahsansainch@gmail.com",
+        "phone": "03113453024",
+        "imageURL": "assets/images/ahsan.jpeg",
+        "courses": [
+            {
+                "id": 3,
+                "name": "Flutter",
+                "credit_hours": 3
+            }
+        ]
+    }
+]

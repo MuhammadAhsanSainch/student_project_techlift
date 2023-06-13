@@ -38,9 +38,8 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
       name = prefs.getString('name') ?? 'name';
       email = prefs.getString('email') ?? 'email';
       mobile = prefs.getString('mobile') ?? 'mobile';
-
       imagePath = prefs.getString("image") ?? '';
-      _image = File(imagePath);
+      // _image = File(imagePath);
     });
   }
 
@@ -52,7 +51,6 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // final profileController = Provider.of<ProfileController>(context);
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
